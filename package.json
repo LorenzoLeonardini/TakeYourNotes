@@ -1,0 +1,27 @@
+{
+  "name": "takeyournotes",
+  "version": "1.0.0",
+  "description": "Electron app that let you take notes in an easier, more fashionable way",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LorenzoLeonardini/TakeYourNotes.git"
+  },
+  "keywords": [
+    "notes",
+    "notepad",
+    "markdown"
+  ],
+  "author": "Lorenzo Leonardini",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LorenzoLeonardini/TakeYourNotes/issues"
+  },
+  "homepage": "https://github.com/LorenzoLeonardini/TakeYourNotes#readme",
+  "dependencies": {
+    "electron": "^1.8.2"
+  }
+}
