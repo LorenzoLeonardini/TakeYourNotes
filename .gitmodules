@@ -1,0 +1,3 @@
+[submodule "libs\\easyHtmlGoogleCharts"]
+	path = libs\\easyHtmlGoogleCharts
+	url = https://github.com/LorenzoLeonardini/easyHtmlGoogleCharts.git

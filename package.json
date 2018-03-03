@@ -4,7 +4,8 @@
   "description": "Electron app that let you take notes in an easier, more fashionable way",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "pack": "electron-packager . 'Take Your Notes' --all --asar --executable-name=takeyournotes --icon=icon.ico --out=release --overwrite"
   },
   "repository": {
     "type": "git",
@@ -21,8 +22,50 @@
     "url": "https://github.com/LorenzoLeonardini/TakeYourNotes/issues"
   },
   "homepage": "https://github.com/LorenzoLeonardini/TakeYourNotes#readme",
-  "dependencies": {},
+  "dependencies": {
+    "electron-compile": "^6.4.2",
+    "electron-squirrel-startup": "^1.0.0",
+    "fs": "0.0.1-security",
+    "highlight.js": "^9.12.0",
+    "marked": "^0.3.17"
+  },
   "devDependencies": {
-    "electron": "1.8.2"
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "electron-packager": "^11.0.1",
+    "electron-prebuilt-compile": "1.8.2"
+  },
+  "config": {
+    "forge": {
+      "make_targets": {
+        "win32": [
+          "squirrel"
+        ],
+        "darwin": [
+          "zip"
+        ],
+        "linux": [
+          "deb",
+          "rpm"
+        ]
+      },
+      "electronPackagerConfig": {
+        "packageManager": "npm"
+      },
+      "electronWinstallerConfig": {
+        "name": "takeyournotes"
+      },
+      "electronInstallerDebian": {},
+      "electronInstallerRedhat": {},
+      "github_repository": {
+        "owner": "",
+        "name": ""
+      },
+      "windowsStoreConfig": {
+        "packageName": "",
+        "name": "takeyournotes"
+      }
+    }
   }
 }

@@ -2,7 +2,10 @@
 bower_components
 node_modules
 dist
+release
 
 #files
 *.tgz
 *.log
+
+out/
